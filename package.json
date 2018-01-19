@@ -1,0 +1,41 @@
+{
+  "name": "rollup-preset-node",
+  "version": "1.0.0-1",
+  "description": "Everything you need to rollup isomorphic modules.",
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && rollup -c",
+    "precommit": "npm run build && git add .",
+    "prepublishOnly": "git diff-index --quiet HEAD"
+  },
+  "keywords": [
+    "rollup-plugin",
+    "rollup-preset",
+    "node",
+    "commonjs"
+  ],
+  "author": "Shannon Moeller <me@shannonmoeller> (http://shannonmoeller.com)",
+  "homepage": "https://github.com/shannonmoeller/rollup-preset-node#readme",
+  "repository": "shannonmoeller/rollup-preset-node",
+  "license": "MIT",
+  "main": "dist/rollup-preset-node.cjs.js",
+  "module": "dist/rollup-preset-node.es.js",
+  "files": [
+    "dist",
+    "src",
+    "*.md"
+  ],
+  "dependencies": {
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-multi-entry": "^2.0.2",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.1.0",
+    "rollup-plugin-node-resolve": "^3.0.2"
+  },
+  "devDependencies": {
+    "rollup": "^0.54.1"
+  },
+  "engines": {
+    "node": ">= 6",
+    "npm": ">= 3"
+  }
+}

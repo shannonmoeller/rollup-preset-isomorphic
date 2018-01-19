@@ -1,0 +1,58 @@
+# rollup-preset-node
+
+[![NPM version][npm-img]][npm-url] [![Downloads][downloads-img]][npm-url]
+
+Everything you need to rollup isomorphic modules.
+
+## Install
+
+```command
+$ npm install --save-dev rollup rollup-preset-node
+```
+
+## Usage
+
+```js
+import node from 'rollup-preset-node';
+
+export default {
+    plugins: [
+        ...node()
+    ]
+};
+```
+
+```command
+$ rollup src/client/index.js -o src/client/bundle.js -mc
+```
+
+## Plugins
+
+Preset includes:
+
+- [rollup-plugin-commonjs](http://npm.im/rollup-plugin-commonjs)
+- [rollup-plugin-multi-entry](http://npm.im/rollup-plugin-multi-entry)
+- [rollup-plugin-node-builtins](http://npm.im/rollup-plugin-node-builtins)
+- [rollup-plugin-node-globals](http://npm.im/rollup-plugin-node-globals)
+- [rollup-plugin-node-resolve](http://npm.im/rollup-plugin-node-resolve)
+
+## API
+
+### `node([options]): Array<object>`
+
+- `options` `{Object}`
+  - `commonjs` `{Object}` - Options for `rollup-plugin-commonjs`.
+  - `multiEntry` `{Object}` - Options for `rollup-plugin-multi-entry`.
+  - `builtins` `{Object}` - Options for `rollup-plugin-node-builtins`.
+  - `globals` `{Object}` - Options for `rollup-plugin-node-globals`.
+  - `resolve` `{Object}` - Options for `rollup-plugin-node-resolve`.
+
+----
+
+© Shannon Moeller <me@shannonmoeller.com> (shannonmoeller.com)
+
+Licensed under [MIT](http://shannonmoeller.com/mit.txt)
+
+[downloads-img]: http://img.shields.io/npm/dm/apply-html.svg?style=flat-square
+[npm-img]:       http://img.shields.io/npm/v/apply-html.svg?style=flat-square
+[npm-url]:       https://npmjs.org/package/apply-html
