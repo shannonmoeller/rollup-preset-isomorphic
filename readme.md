@@ -26,26 +26,16 @@ export default {
 $ rollup src/client/index.js -o src/client/bundle.js -mc
 ```
 
-## Plugins
-
-Preset includes:
-
-- [rollup-plugin-commonjs](http://npm.im/rollup-plugin-commonjs)
-- [rollup-plugin-multi-entry](http://npm.im/rollup-plugin-multi-entry)
-- [rollup-plugin-node-builtins](http://npm.im/rollup-plugin-node-builtins)
-- [rollup-plugin-node-globals](http://npm.im/rollup-plugin-node-globals)
-- [rollup-plugin-node-resolve](http://npm.im/rollup-plugin-node-resolve)
-
 ## API
 
 ### `node([options]): Array<object>`
 
 - `options` `{Object}`
-  - `commonjs` `{Object}` - Options for `rollup-plugin-commonjs`.
-  - `multiEntry` `{Object}` - Options for `rollup-plugin-multi-entry`.
-  - `builtins` `{Object}` - Options for `rollup-plugin-node-builtins`.
-  - `globals` `{Object}` - Options for `rollup-plugin-node-globals`.
-  - `resolve` `{Object}` - Options for `rollup-plugin-node-resolve`.
+  - `commonjs` `{Object}` - Options for [`rollup-plugin-commonjs`](http://npm.im/rollup-plugin-commonjs).
+  - `multiEntry` `{Object}` - Options for [`rollup-plugin-multi-entry`](http://npm.im/rollup-plugin-multi-entry).
+  - `builtins` `{Object}` - Options for [`rollup-plugin-node-builtins`](http://npm.im/rollup-plugin-node-builtins)
+  - `globals` `{Object}` - Options for [`rollup-plugin-node-globals`](http://npm.im/rollup-plugin-node-globals).
+  - `resolve` `{Object}` - Options for [`rollup-plugin-node-resolve`](http://npm.im/rollup-plugin-node-resolve).
 
 ----
 
@@ -53,6 +43,6 @@ Preset includes:
 
 Licensed under [MIT](http://shannonmoeller.com/mit.txt)
 
-[downloads-img]: http://img.shields.io/npm/dm/apply-html.svg?style=flat-square
-[npm-img]:       http://img.shields.io/npm/v/apply-html.svg?style=flat-square
-[npm-url]:       https://npmjs.org/package/apply-html
+[downloads-img]: http://img.shields.io/npm/dm/rollup-preset-node.svg?style=flat-square
+[npm-img]:       http://img.shields.io/npm/v/rollup-preset-node.svg?style=flat-square
+[npm-url]:       https://npmjs.org/package/rollup-preset-node

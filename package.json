@@ -1,6 +1,6 @@
 {
   "name": "rollup-preset-node",
-  "version": "1.0.0-1",
+  "version": "1.0.0-2",
   "description": "Everything you need to rollup isomorphic modules.",
   "scripts": {
     "build": "rm -rf dist && mkdir dist && rollup -c",
