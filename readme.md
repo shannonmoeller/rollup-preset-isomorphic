@@ -2,7 +2,7 @@
 
 [![NPM version][npm-img]][npm-url] [![Downloads][downloads-img]][npm-url]
 
-Everything you need to rollup isomorphic modules.
+Everything you need to rollup isomorphic modules, in the proper order, with sane defaults.
 
 ## Install
 
@@ -13,11 +13,11 @@ $ npm install --save-dev rollup rollup-preset-isomorphic
 ## Usage
 
 ```js
-import node from 'rollup-preset-isomorphic';
+import isomorphic from 'rollup-preset-isomorphic';
 
 export default {
     plugins: [
-        ...node()
+        ...isomorphic()
     ]
 };
 ```
