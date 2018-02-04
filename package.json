@@ -1,5 +1,5 @@
 {
-  "name": "rollup-preset-node",
+  "name": "rollup-preset-isomorphic",
   "version": "1.0.0-3",
   "description": "Everything you need to rollup isomorphic modules.",
   "scripts": {
@@ -17,10 +17,10 @@
     "commonjs"
   ],
   "author": "Shannon Moeller <me@shannonmoeller> (http://shannonmoeller.com)",
-  "repository": "shannonmoeller/rollup-preset-node",
+  "repository": "shannonmoeller/rollup-preset-isomorphic",
   "license": "MIT",
-  "main": "dist/rollup-preset-node.cjs.js",
-  "module": "dist/rollup-preset-node.es.js",
+  "main": "dist/rollup-preset-isomorphic.cjs.js",
+  "module": "dist/rollup-preset-isomorphic.es.js",
   "files": [
     "dist",
     "*.md"

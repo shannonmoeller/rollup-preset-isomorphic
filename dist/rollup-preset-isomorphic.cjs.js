@@ -19,12 +19,24 @@ function node(options = {}) {
 		plugins.push(commonjs(options.commonjs));
 	}
 
-	if (options.resolve !== false) {
-		plugins.push(resolve(options.resolve));
-	}
-
 	if (options.globals !== false) {
 		plugins.push(globals(options.globals));
+	}
+
+	if (options.resolve !== false) {
+		plugins.push(
+			resolve(
+				Object.assign(
+					{},
+					{
+						// Prefer browser
+						browser: true,
+						preferBuiltins: false,
+					},
+					options.resolve
+				)
+			)
+		);
 	}
 
 	if (options.builtins !== false) {
@@ -35,4 +47,4 @@ function node(options = {}) {
 }
 
 module.exports = node;
-//# sourceMappingURL=rollup-preset-node.cjs.js.map
+//# sourceMappingURL=rollup-preset-isomorphic.cjs.js.map
