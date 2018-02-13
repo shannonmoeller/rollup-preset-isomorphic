@@ -1,7 +1,11 @@
 .nyc_output/
 coverage/
+dist/
+examples/*/
 node_modules/
 
 *.log
 .*.swp
+.DS_Store
+.Trash*
 .npmignore
