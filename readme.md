@@ -13,11 +13,13 @@ $ npm install --save-dev rollup rollup-preset-isomorphic
 ## Usage
 
 ```js
+// rollup.config.js
 import isomorphic from 'rollup-preset-isomorphic';
 
 export default {
     plugins: [
-        ...isomorphic()
+        ...isomorphic(),
+        // other plugins
     ]
 };
 ```
@@ -31,8 +33,8 @@ $ rollup src/client/index.js -o src/client/bundle.js -mc
 ### `node([options]): Array<object>`
 
 - `options` `{Object}`
-  - `commonjs` `{Object|Boolean}` - Options for [`rollup-plugin-commonjs`](http://npm.im/rollup-plugin-commonjs), or `false` to disable.
   - `multiEntry` `{Object|Boolean}` - Options for [`rollup-plugin-multi-entry`](http://npm.im/rollup-plugin-multi-entry), or `false` to disable.
+  - `commonjs` `{Object|Boolean}` - Options for [`rollup-plugin-commonjs`](http://npm.im/rollup-plugin-commonjs), or `false` to disable.
   - `globals` `{Object|Boolean}` - Options for [`rollup-plugin-node-globals`](http://npm.im/rollup-plugin-node-globals), or `false` to disable.
   - `resolve` `{Object|Boolean}` - Options for [`rollup-plugin-node-resolve`](http://npm.im/rollup-plugin-node-resolve), or `false` to disable.
   - `builtins` `{Object|Boolean}` - Options for [`rollup-plugin-node-builtins`](http://npm.im/rollup-plugin-node-builtins), or `false` to disable.

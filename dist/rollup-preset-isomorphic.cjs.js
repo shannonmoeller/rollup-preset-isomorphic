@@ -2,11 +2,11 @@
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
+var builtins = _interopDefault(require('rollup-plugin-node-builtins'));
 var commonjs = _interopDefault(require('rollup-plugin-commonjs'));
+var globals = _interopDefault(require('rollup-plugin-node-globals'));
 var multiEntry = _interopDefault(require('rollup-plugin-multi-entry'));
 var resolve = _interopDefault(require('rollup-plugin-node-resolve'));
-var builtins = _interopDefault(require('rollup-plugin-node-builtins'));
-var globals = _interopDefault(require('rollup-plugin-node-globals'));
 
 function node(options = {}) {
 	const plugins = [];
